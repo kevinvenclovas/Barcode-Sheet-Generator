@@ -23,7 +23,7 @@ int columns = 3;
 int rows = 1;
 float cellWidths = new float[] { 50, 30, 20 };
 
-byte[] sheet = new BarcodeSheetBuilder(new List<string> { "code1", "code2" }, PageSize.A4, columns, rows)
+byte[] sheet = new BarcodeSheetBuilder(new List<string> { "code1", "code2", "code3" }, PageSize.A4, columns, rows)
 .SetCellPercentWidth(cellWidths)
 .Build();
 
@@ -31,7 +31,7 @@ byte[] sheet = new BarcodeSheetBuilder(new List<string> { "code1", "code2" }, Pa
 
 ### Generate Barcode-Sheet
 ```c#
-byte[] sheet = new BarcodeSheetBuilder(new List<string> { "code1", "code2" }, PageSize.A4, 2, 1)
+byte[] sheet = new BarcodeSheetBuilder(new List<string> { "code1", "code2", "code3" }, PageSize.A4, 2, 1)
 .SetPageMargins(0, 0, 5, 5)
 .SetColumnPercentWidth(new float[] { 50, 30, 20 })
 .SetCellPadding(25)
